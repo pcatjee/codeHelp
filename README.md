@@ -39,3 +39,6 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+Make sure to run commands from here so that crawlers can crawl the new updates on the website for docSearch to work
+[docusaurus-lunr-search](https://www.npmjs.com/package/docusaurus-lunr-search?activeTab=readme)

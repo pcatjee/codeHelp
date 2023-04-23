@@ -57,3 +57,68 @@ npx expo start --clear
 ```
 
 This restarts the development server and instructs the bundlers (e.g., webpack, Metro) to clear their caches
+
+## React Native stack navigator
+
+## Installation
+
+Install the required packages in your React Native project:
+
+```bash
+npm install @react-navigation/native
+```
+
+## Installing dependencies into an Expo managed project
+
+In your project directory, run:
+
+```bash
+npx expo install react-native-screens react-native-safe-area-context
+```
+
+## Installing dependencies into a bare React Native project
+
+In your project directory, run:
+
+```bash
+npm install react-native-screens react-native-safe-area-context
+```
+
+To use the native stack navigator, we need to install `@react-navigation/native-stack` :
+
+```bash
+npm install @react-navigation/native-stack
+```
+
+## Creating a native stack navigator
+
+```bash
+// In App.js in a new project
+
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Home Screen</Text>
+    </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
+```
