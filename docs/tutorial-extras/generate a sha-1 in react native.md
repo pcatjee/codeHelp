@@ -33,5 +33,9 @@ This will output the certificate details, including the SHA-1 fingerprint.
 This is another way to get all the SHA-1 in a list format in React Native CLI project
 
 ```bash
-cd ./android && ./gradlew signingReport
+cd ./android
+```
+
+```bash
+./gradlew signingReport
 ```
