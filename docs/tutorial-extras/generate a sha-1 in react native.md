@@ -27,3 +27,11 @@ This will output the certificate details, including the SHA-1 fingerprint.
 4. Copy the SHA-1 fingerprint and use it as needed, such as for configuring Google API credentials.
 
 **Note** that if you are building a release version of your app, you will need to generate a release keystore and use it to sign your app. You can use the same **keytool** command to generate a release keystore, but you will need to provide your own values for the keystore password, key alias, and validity period. Additionally, you may need to configure your build settings to use the release keystore for signing.
+
+# App Signing Report
+
+This is another way to get all the SHA-1 in a list format in React Native CLI project
+
+```bash
+cd ./android && ./gradlew signingReport
+```
