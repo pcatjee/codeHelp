@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Generate SHA-1 in React Native CLI project
+## Generate SHA-1 in React Native CLI project
 
 To generate a SHA-1 hash in a React Native CLI project, you can use the **react-native** command line interface along with the **keytool** command from the Java Development Kit (JDK). Here are the general steps to follow:
 
@@ -28,7 +28,7 @@ This will output the certificate details, including the SHA-1 fingerprint.
 
 **Note** that if you are building a release version of your app, you will need to generate a release keystore and use it to sign your app. You can use the same **keytool** command to generate a release keystore, but you will need to provide your own values for the keystore password, key alias, and validity period. Additionally, you may need to configure your build settings to use the release keystore for signing.
 
-# App Signing Report
+## App Signing Report
 
 This is another way to get all the SHA-1 in a list format in React Native CLI project
 

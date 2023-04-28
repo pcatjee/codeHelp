@@ -40,6 +40,20 @@ The `npm run start` command builds your website locally and serves it through a 
 
 Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
 
+## Running your React Native application
+
+**Step 1: Start Metro**
+
+```bash
+npx react-native start
+```
+
+## Start your application
+
+```bash
+npx react-native run-android
+```
+
 ## Reset React Native Cache
 
 For React Native Init approach (without expo) use: **[Source](https://stackoverflow.com/questions/46878638/how-to-clear-react-native-cache)**
