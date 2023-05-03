@@ -82,6 +82,12 @@ Install the required packages in your React Native project:
 npm install @react-navigation/native
 ```
 
+To use the native stack navigator, we need to install `@react-navigation/native-stack` :
+
+```bash
+npm install @react-navigation/native-stack
+```
+
 ## Installing dependencies into an Expo managed project
 
 In your project directory, run:
@@ -96,12 +102,6 @@ In your project directory, run:
 
 ```bash
 npm install react-native-screens react-native-safe-area-context
-```
-
-To use the native stack navigator, we need to install `@react-navigation/native-stack` :
-
-```bash
-npm install @react-navigation/native-stack
 ```
 
 ## Creating a native stack navigator
